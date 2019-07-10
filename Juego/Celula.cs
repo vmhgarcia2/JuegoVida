@@ -17,8 +17,30 @@ namespace Juego
 
         public static bool SigueViva(bool estado, byte cantidad)
         {
-            throw new Exception("No implementado");
-        }
+            if (estado == true)
+            {
+                if (cantidad > 1 && cantidad <= 3)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+            else
+            {
+                if (cantidad == 3)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
 
+            
+        }
     }
 }
