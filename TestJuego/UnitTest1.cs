@@ -235,5 +235,20 @@ namespace Tests
             //Assert
             Assert.IsFalse(estado);
         }
+
+        [Test]
+        public void TestSigueMuerta2()
+        {
+            //Arrange
+            bool estadoActual = false;
+            byte num = 2;
+            bool estado;
+
+            //Act
+            estado = Celula.SigueViva(estadoActual, num);
+
+            //Assert
+            Assert.IsFalse(estado);
+        }
     }
 }
